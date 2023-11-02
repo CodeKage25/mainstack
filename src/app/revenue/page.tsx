@@ -99,11 +99,11 @@ const Revenue: React.FC = () => {
         </div>
         <div className="inline-flex flex-col items-start gap-6">
             <div className="flex self-stretch">
-                {transactionData.map((transaction) => (
+                {/* {transactionData.map((transaction) => (
                     <div>{transaction.status === "successful" ? <CallMade /> : <CallRecieved />}</div>
                     <div className="flex flex-col justify-between items-start "></div>
                     <div></div>
-                ))}
+                ))} */}
             </div>
         </div>
         </div>
