@@ -1,8 +1,9 @@
-export default function Home() {
+const Home = () => {
     return (
       <main className="">
-        HomePage
+        Home
       </main>
     )
   }
+export default Home;
   

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import './globals.css';
+import NavBar from "@/components/NavBar";
+import AppBar from "@/components/AppBar";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} antialiased grid grid-cols-8 grid-rows-6 h-[100%]`}>
+        <NavBar />
+        <AppBar />
+        <div className="col-start-2 col-end-8 row-start-2 row-end-7 flex-grow p-6 overflow-y-auto">{children}</div>
+        </body>
     </html>
   )
 }

@@ -1,8 +1,9 @@
-export default function Home() {
+const CRM = () => {
     return (
       <main className="">
-        HomePage
+        CRM
       </main>
     )
   }
+export default CRM;
   
