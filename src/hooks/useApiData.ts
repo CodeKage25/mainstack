@@ -1,9 +1,20 @@
 "use client"
 import { useEffect, useState } from 'react';
-import { getUserData, getWalletData, getAllTransactions } from '@/api';
+import { getUserData, getWalletData, getAllTransactions } from '@/api/api';
 
-export function useApiData<T>(fetchFunction: () => Promise<T>) {
-    console.log("Calling useApiData");
+export function useUserData() {
+  return useApiData(getUserData);
+}
+
+export function useWalletData() {
+  return useApiData(getWalletData);
+}
+
+export function useTransactionsData() {
+  return useApiData(getAllTransactions);
+}
+
+function useApiData<T>(fetchFunction: () => Promise<T>) {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

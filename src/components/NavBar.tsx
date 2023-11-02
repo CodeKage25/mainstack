@@ -37,10 +37,8 @@ const NavBar = () => {
                 "bg-[#131316] text-white" : pathname === item.href,
             },)}
             >
-                {/* <div className="flex pt-2 pl-[18px] pb-2 pr-[14px] gap-1 justify-center items-center rounded-[100px]" key={item.key}> */}
                     <item.icon  />
                     {item.name}
-                {/* </div> */}
                 </Link>
         ))}
         </div>

@@ -12,7 +12,7 @@ const CallMade: FC<React.SVGProps<SVGSVGElement>> = (props) => {
     >
       <mask
         id="mask0_373_175"
-        style="mask-type:alpha"
+        className="mask-type:alpha"
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

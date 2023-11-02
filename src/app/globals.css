@@ -13,6 +13,14 @@ body {
   width: 100%;
   min-height: 100vh;
 }
+
+.custom-start {
+  background-image: linear-gradient(139deg, #5C6670 2.33%, #131316 96.28%);
+}
+
+.custom-end {
+  background-image: linear-gradient(139deg, #5C6670 2.33%, #131316 96.28%);
+}
  
 @layer base {
   :root {
