@@ -35,7 +35,7 @@ const Revenue: React.FC = () => {
   }
   
     return (
-      <main className="flex flex-col gap-5 w-[100%]">
+      <div className="flex flex-col gap-5 w-[100%]">
         <div className="flex justify-between w-[100%]">
         <div className="flex flex-col">
         <div className="inline-flex items-center gap-16">
@@ -44,7 +44,7 @@ const Revenue: React.FC = () => {
             <p className="color-[#131316] text-center font-[Degular] text-4xl not-italic font-bold leading-[48px] tracking-[-0.09375em]">{`USD ${walletData.balance.toFixed(2)}`}</p>
         </div>
         <div className="flex flex-col justify-center items-center gap-[10px]">
-            <Button className="flex pt-[14px] flex justify-center items-center self-stretch pr-7 pl-7 pb-[14px] rounded-[100px] bg-[#131316] font-[Degular] text-base not-italic font-semibold leading-6 tracking-[-0.025em]">Withdraw</Button>
+            <Button className="flex pt-[14px] justify-center items-center self-stretch pr-7 pl-7 pb-[14px] rounded-[100px] bg-[#131316] font-[Degular] text-base not-italic font-semibold leading-6 tracking-[-0.025em]">Withdraw</Button>
         </div>
         </div>
         <div></div>
@@ -107,7 +107,7 @@ const Revenue: React.FC = () => {
             </div>
         </div>
         </div>
-      </main>
+      </div>
     )
   }
 export default Revenue;
