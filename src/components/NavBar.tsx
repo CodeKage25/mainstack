@@ -14,11 +14,11 @@ import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 
 const navigation = [
-    { name: 'Home', href: '#', key: 1, icon: HomeSvg, href: '/home' },
-    { name: 'Analytics', href: '#', key: 2, icon: Analytics, href: '/analytics' },
-    { name: 'Revenue', href: '#', key: 3, icon: RevenueSvg, href: '/revenue' },
-    { name: 'CRM', href: '#', key: 4, icon: CRMSvg, href: '/crm' },
-    { name: 'App', href: '#', key: 5, icon: Widgets, href: '/apps' },
+    { name: 'Home', key: 1, icon: HomeSvg, href: '/home' },
+    { name: 'Analytics', key: 2, icon: Analytics, href: '/analytics' },
+    { name: 'Revenue', key: 3, icon: RevenueSvg, href: '/revenue' },
+    { name: 'CRM', key: 4, icon: CRMSvg, href: '/crm' },
+    { name: 'App', key: 5, icon: Widgets, href: '/apps' },
   ];
 
 const NavBar = () => {
