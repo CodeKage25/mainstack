@@ -3,7 +3,7 @@ import React, { FC } from "react";
 const Close: FC<React.SVGProps<SVGSVGElement>> = (props) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" {...props}>
-  <mask id="mask0_373_754" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+  <mask id="mask0_373_754" className="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
     <rect width="24" height="24" fill="#C4C4C4"/>
   </mask>
   <g mask="url(#mask0_373_754)">
